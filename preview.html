@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>20/10 - Tặng các bạn nữ 6A2</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+    background: linear-gradient(135deg, #ffd6e7, #fceaff, #ffe4ed);
+    color: #d63384;
+    text-align: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.page {
+    min-height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px 15px;
+}
+
+#opening {
+    display: flex;
+}
+
+.card {
+    width: min(600px, 100%);
+    padding: 35px 22px;
+    background: rgba(255,255,255,0.88);
+    border: 3px solid white;
+    border-radius: 30px;
+    box-shadow: 0 10px 35px #e98bbd66;
+    animation: appear 1.2s ease;
+}
+
+h1 {
+    font-size: clamp(30px, 7vw, 48px);
+    color: #ff4081;
+    text-shadow: 2px 3px 8px #ffc0d7;
+}
+
+h2 {
+    color: #c044a0;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 15px 25px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #ff4f91, #d66bff);
+    box-shadow: 0 5px 15px #e78abc77;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 22px #e78abcaa;
+}
+
+.flower {
+    font-size: 45px;
+    animation: sway 2s infinite alternate;
+}
+
+.wish {
+    background: #fff0f6;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 20px;
+    border-left: 5px solid #ff69a4;
+    font-size: 18px;
+    color: #9b3980;
+    box-shadow: 0 4px 12px #f5a7ce44;
+}
+
+#home {
+    display: none;
+}
+
+.heart {
+    position: fixed;
+    bottom: -50px;
+    pointer-events: none;
+    animation: fly 6s linear forwards;
+    z-index: 10;
+}
+
+@keyframes fly {
+    from {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes sway {
+    from { transform: rotate(-8deg); }
+    to { transform: rotate(8deg); }
+}
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+
+<body>
+
+<!-- TRANG MỞ ĐẦU -->
+<section class="page" id="opening">
+    <div class="card">
+        <div class="flower">🌸💗🌸</div>
+
+        <h1>Xin chào các bạn nữ 6A2!</h1>
+
+        <p>
+            Có một món quà nhỏ xinh đang chờ các bạn
+            nhân ngày Phụ nữ Việt Nam 20/10 đó! 🎁
+        </p>
+
+        <p>
+            💌 Một chút yêu thương<br>
+            🌷 Một chút ngọt ngào<br>
+            💖 Và thật nhiều lời chúc tốt đẹp!
+        </p>
+
+        <button onclick="openHome()">
+            🌷 Hãy nhấn vào đây 🌷
+        </button>
+
+        <p style="font-size:14px;color:#bb79a1">
+            ✨ Dành tặng các bạn nữ lớp 6A2 ✨
+        </p>
+    </div>
+</section>
+
+
+<!-- TRANG CHỦ -->
+<section class="page" id="home">
+    <div class="card">
+        <div class="flower">💐🌷💐</div>
+
+        <h1>Chúc mừng ngày 20/10!</h1>
+
+        <h2>💖 Gửi các bạn nữ lớp 6A2 💖</h2>
+
+        <p>
+            Nhân ngày Phụ nữ Việt Nam 20/10,
+            chúng mình xin gửi đến tất cả các bạn nữ
+            lớp 6A2 những lời chúc tuyệt vời nhất!
+        </p>
+
+        <div class="wish">
+            🌸 Chúc các bạn luôn vui vẻ, xinh tươi,
+            hạnh phúc và lúc nào cũng nở nụ cười!
+        </div>
+
+        <div class="wish">
+            📚 Chúc các bạn học giỏi, đạt nhiều điểm tốt,
+            luôn tự tin và thực hiện được ước mơ của mình!
+        </div>
+
+        <div class="wish">
+            🎀 Chúc các bạn nhận được thật nhiều hoa,
+            quà và những lời yêu thương trong ngày đặc biệt!
+        </div>
+
+        <div class="wish">
+            💕 Mong rằng lớp 6A2 chúng ta sẽ luôn đoàn kết,
+            vui vẻ và có thật nhiều kỷ niệm đẹp bên nhau!
+        </div>
+
+        <h2>🌷 Mãi vui vẻ nhé, những cô gái 6A2! 🌷</h2>
+
+        <p>
+            💗 Chúc các bạn có một ngày 20/10 thật đáng nhớ! 💗
+        </p>
+
+        <div class="flower">🌹🎁💝🎁🌹</div>
+
+        <button onclick="showSurprise()">
+            🎁 Nhấn để nhận món quà bí mật
+        </button>
+
+        <p id="surprise" style="font-weight:bold"></p>
+
+        <button onclick="goBack()">
+            ↩ Quay lại trang đầu
+        </button>
+    </div>
+</section>
+
+
+<script>
+function openHome() {
+    document.getElementById("opening").style.display = "none";
+    document.getElementById("home").style.display = "flex";
+
+    window.scrollTo(0, 0);
+    startHearts();
+}
+
+function goBack() {
+    document.getElementById("home").style.display = "none";
+    document.getElementById("opening").style.display = "flex";
+
+    window.scrollTo(0, 0);
+}
+
+function showSurprise() {
+    document.getElementById("surprise").innerHTML =
+        "💖🎉 Các bạn nữ 6A2 là những bông hoa tuyệt vời nhất! " +
+        "Chúc các bạn luôn rạng rỡ, hạnh phúc và gặp thật nhiều may mắn! 🌸💐💗";
+
+    for (let i = 0; i < 25; i++) {
+        setTimeout(createHeart, i * 100);
+    }
+}
+
+function createHeart() {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+
+    const symbols = ["💗", "💖", "💕", "🌸", "🌷", "✨"];
+    heart.innerHTML = symbols[
+        Math.floor(Math.random() * symbols.length)
+    ];
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (18 + Math.random() * 25) + "px";
+    heart.style.animationDuration = (4 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 8000);
+}
+
+let heartTimer;
+
+function startHearts() {
+    clearInterval(heartTimer);
+
+    for (let i = 0; i < 12; i++) {
+        setTimeout(createHeart, i * 150);
+    }
+
+    heartTimer = setInterval(createHeart, 450);
+}
+</script>
+
+</body>
+</html>
